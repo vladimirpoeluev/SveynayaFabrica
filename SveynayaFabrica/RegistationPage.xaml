@@ -1,0 +1,37 @@
+﻿<Page x:Class="SveynayaFabrica.RegistationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SveynayaFabrica"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegistationPage">
+
+    <Grid>
+        <Border BorderBrush="#D1EEFC"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Width="350"
+        Padding="20"
+        Style="{StaticResource border-form}">
+
+
+            <StackPanel>
+                <Label Content="Регистрация"/>
+                <Label Content="Логин"/>
+                <TextBox x:Name="tboxLogin"/>
+                <Label Content="Пароль"/>
+                <PasswordBox x:Name="tboxPassword"/>
+                <Label Content="Повтор пароля"/>
+                <PasswordBox x:Name="tboxPasswordRepeat"/>
+                <Button Content="Регистрация"
+                        Click="Button_Click" />
+                <Button Content="Назад"/>
+
+
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Page>

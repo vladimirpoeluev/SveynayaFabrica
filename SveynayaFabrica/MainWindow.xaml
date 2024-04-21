@@ -1,0 +1,42 @@
+﻿<Window x:Class="SveynayaFabrica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SveynayaFabrica"
+        mc:Ignorable="d" 
+        MinHeight="100"
+        MinWidth="100" Icon="/Resources/logo-02.jpg"
+        Title="Швейная фабрика" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid Background="#E0A9AF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="0"
+                    Background="#B5D5CA">
+            <Label Content="Швейная фабрика" 
+                   Style="{StaticResource discharge-while}"
+                   VerticalAlignment="Center"/>
+            <Button x:Name="btnBack"
+                    Content="Назад" 
+                    Click="Button_Click" 
+                    Visibility="Hidden"/>
+        </StackPanel>
+        <Image Source="Resources/logo-02.jpg"
+               Height="70"
+               HorizontalAlignment="Right"/>
+        <DockPanel Grid.Row="1">
+            <Frame x:Name="mainFrame" 
+                   Source="EntrancePage.xaml"
+                   NavigationUIVisibility="Hidden"
+                   Navigated="MainFrame_Navigated"/>
+        </DockPanel>
+
+
+    </Grid>
+</Window>
