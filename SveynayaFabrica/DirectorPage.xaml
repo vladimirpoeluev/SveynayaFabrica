@@ -15,6 +15,13 @@
         </Grid.RowDefinitions>
         <Label Content="Страница директора"
        FontSize="30"/>
-        <DataGrid Grid.Row="1"/>
+        <DataGrid x:Name ="dgUsers"
+                  Grid.Row="1"
+                  Loaded="DataLoaded">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Логин" Binding="{Binding Login}"/>
+                <DataGridTextColumn Header="Роль" Binding="{Binding Role.Name}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>

@@ -34,11 +34,12 @@
             {
                 await Task.Run(() =>
                 {
-
+                    
                     User userActive = new User();
                     if ((userActive = data.User.First(user => user.Password == login
                                                               && user.Login == password)) != null)
                     {
+                        Model.Records.User.UserActual = new Model.Records.User(userActive);
                         Dispatcher.InvokeAsync(() =>
                         {
 
