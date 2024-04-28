@@ -20,14 +20,16 @@
         <Label Content="Страница менеджера"
                FontSize="30"
                Grid.ColumnSpan="2"/>
-        <Frame Grid.Row="1"
+        <Frame x:Name="menegerFrame" Grid.Row="1"
                Grid.Column="1"
-               Source="ProductPage.xaml"/>
+               Source="../PageOfData/ProductPage.xaml"/>
         <StackPanel Grid.Row="1"
                     Grid.Column="0">
             <Label Content="Меню"/>
-            <Button Content="Продукты"/>
-            <Button Content="Заказы"/>
+            <Button Content="Продукты" 
+                    Click="GoToProduct"/>
+            <Button Content="Заказы" 
+                    Click="GoToOrder"/>
 
         </StackPanel>
     </Grid>

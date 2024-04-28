@@ -1,10 +1,6 @@
-﻿using SveynayaFabrica.data.migrations;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using SveynayaFabrica.Pages.PageOfData;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Threading;
 
 namespace SveynayaFabrica
 {
@@ -16,6 +12,16 @@ namespace SveynayaFabrica
         public MenagerPage()
         {
             InitializeComponent();
+        }
+
+        private void GoToProduct(object sender, RoutedEventArgs e)
+        {
+            menegerFrame.Navigate(new ProductPage());
+        }
+
+        private void GoToOrder(object sender, RoutedEventArgs e)
+        {
+            menegerFrame.Navigate(new OrderPage());
         }
     }
 }

@@ -25,7 +25,6 @@ namespace SveynayaFabrica
                 var products = data.Product.ToArray();
                 Dispatcher.InvokeAsync(() =>
                 {
-                    MessageBox.Show("Данные прогрузились ты просто слепой");
                     dgProduct.ItemsSource = products;
                 });
 

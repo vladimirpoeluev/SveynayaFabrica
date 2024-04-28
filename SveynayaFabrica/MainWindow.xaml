@@ -33,7 +33,7 @@
                HorizontalAlignment="Right"/>
         <DockPanel Grid.Row="1">
             <Frame x:Name="mainFrame" 
-                   Source="EntrancePage.xaml"
+                   Source="Pages/OtherPage/EntrancePage.xaml"
                    NavigationUIVisibility="Hidden"
                    Navigated="MainFrame_Navigated"/>
         </DockPanel>

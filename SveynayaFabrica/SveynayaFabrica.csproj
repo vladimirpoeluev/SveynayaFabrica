@@ -82,7 +82,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CustomerPage.xaml.cs">
+    <Compile Include="Pages\PageOfData\OrderPage.xaml.cs">
+      <DependentUpon>OrderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageOfRole\CustomerPage.xaml.cs">
       <DependentUpon>CustomerPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="data\migrations\Fabric.cs">
@@ -139,33 +142,37 @@
     <Compile Include="data\migrations\User.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="DirectorPage.xaml.cs">
+    <Compile Include="Pages\PageOfRole\DirectorPage.xaml.cs">
       <DependentUpon>DirectorPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MenagerPage.xaml.cs">
+    <Compile Include="Pages\PageOfRole\MenagerPage.xaml.cs">
       <DependentUpon>MenagerPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Records\RoleUser.cs" />
     <Compile Include="Model\Records\User.cs" />
     <Compile Include="NavigationFrame.cs" />
-    <Compile Include="ProductPage.xaml.cs">
+    <Compile Include="Pages\PageOfData\ProductPage.xaml.cs">
       <DependentUpon>ProductPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RegistationPage.xaml.cs">
+    <Compile Include="Pages\OtherPage\RegistationPage.xaml.cs">
       <DependentUpon>RegistationPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="StockmanPage.xaml.cs">
+    <Compile Include="Pages\PageOfRole\StockmanPage.xaml.cs">
       <DependentUpon>StockmanPage.xaml</DependentUpon>
     </Compile>
-    <Page Include="CustomerPage.xaml">
+    <Page Include="Pages\PageOfData\OrderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DirectorPage.xaml">
+    <Page Include="Pages\PageOfRole\CustomerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EntrancePage.xaml">
+    <Page Include="Pages\PageOfRole\DirectorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OtherPage\EntrancePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -177,26 +184,26 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="EntrancePage.xaml.cs">
+    <Compile Include="Pages\OtherPage\EntrancePage.xaml.cs">
       <DependentUpon>EntrancePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MenagerPage.xaml">
+    <Page Include="Pages\PageOfRole\MenagerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ProductPage.xaml">
+    <Page Include="Pages\PageOfData\ProductPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RegistationPage.xaml">
+    <Page Include="Pages\OtherPage\RegistationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="StockmanPage.xaml">
+    <Page Include="Pages\PageOfRole\StockmanPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
