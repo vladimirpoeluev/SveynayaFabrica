@@ -17,20 +17,5 @@ namespace SveynayaFabrica
         {
             InitializeComponent();
         }
-
-        private async void LoadedPage(object sender, RoutedEventArgs e)
-        {
-
-            await Task.Run(() =>
-            {
-                DatabaseTestsEntities data = new DatabaseTestsEntities();
-                var products = data.Product.ToArray();
-                Dispatcher.InvokeAsync(() =>
-                {
-                    dgProduct.ItemsSource = products;
-                });
-
-            });
-        }
     }
 }

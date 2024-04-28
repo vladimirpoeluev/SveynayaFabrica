@@ -148,6 +148,9 @@
     <Compile Include="Model\Records\RoleUser.cs" />
     <Compile Include="Model\Records\User.cs" />
     <Compile Include="NavigationFrame.cs" />
+    <Compile Include="ProductPage.xaml.cs">
+      <DependentUpon>ProductPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RegistationPage.xaml.cs">
       <DependentUpon>RegistationPage.xaml</DependentUpon>
     </Compile>
@@ -182,6 +185,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MenagerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProductPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

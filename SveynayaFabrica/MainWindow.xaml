@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SveynayaFabrica"
         mc:Ignorable="d" 
-        MinHeight="100"
-        MinWidth="100" Icon="/Resources/logo-02.jpg"
-        Title="Швейная фабрика" Height="450" Width="800" Loaded="Window_Loaded">
+        MinHeight="400"
+        MinWidth="400" Icon="/Resources/logo-02.jpg"
+        Title="Швейная фабрика" Height="450" Width="800" 
+        Loaded="Window_Loaded">
     <Grid Background="#E0A9AF">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
