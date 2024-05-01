@@ -27,12 +27,11 @@ namespace SveynayaFabrica.Pages.PageOfData
                     IdUser = ((User)cbUsers.SelectedItem).Id,
                     Date = DateTime.Now,
                     IdState = 1,
-                    IdManager = SveynayaFabrica.Model.Records.User.UserActual.Id,
+                    IdManager = Model.Records.User.UserActual.Id,
                     Price = double.Parse(tbOrderProce.Text)
 
                 });
                 data.SaveChanges();
-                MessageBox.Show(addOrder.Date.ToString());
             }
             catch (Exception)
             {

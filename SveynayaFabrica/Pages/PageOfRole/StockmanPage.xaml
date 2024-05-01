@@ -13,8 +13,23 @@
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         <Label Content="Страница кладовщика"
-       FontSize="30"/>
-        <DataGrid Grid.Row="1"/>
+               FontSize="30"
+               Grid.ColumnSpan="2"/>
+        <Frame x:Name="menegerFrame" Grid.Row="1"
+               Grid.Column="1"
+               Source="../PageOfData/ProductPage.xaml"/>
+        <StackPanel Grid.Row="1"
+                    Grid.Column="0">
+            <Label Content="Меню"/>
+            <Button Content="Продукты" 
+                    Click="GoToProduct"/>
+            <Button Content="Создать продукт"
+                    Click="CreateProduct"/>
+        </StackPanel>
     </Grid>
 </Page>

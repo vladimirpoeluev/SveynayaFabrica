@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SveynayaFabrica.Pages.PageOfData;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace SveynayaFabrica
 {
@@ -23,6 +12,16 @@ namespace SveynayaFabrica
         public StockmanPage()
         {
             InitializeComponent();
+        }
+
+        private void GoToProduct(object sender, RoutedEventArgs e)
+        {
+            menegerFrame.Navigate(new ProductPage());
+        }
+
+        private void CreateProduct(object sender, RoutedEventArgs e)
+        {
+            menegerFrame.Navigate(new ProductConstPage());
         }
     }
 }
