@@ -9,6 +9,19 @@
       Title="OrderPage">
 
     <Grid>
-        
+        <DataGrid x:Name="dgOrder" 
+          Grid.Row="1"
+          Loaded="DataLoaded">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Цена" 
+                            Binding="{Binding Price}"/>
+                <DataGridTextColumn Header="Дата" 
+                            Binding="{Binding Date}"/>
+                <DataGridTextColumn Header="Статус" 
+                            Binding="{Binding OrderState.Name}"/>
+                <DataGridTextColumn Header="Менеджер" 
+                            Binding="{Binding User.Login}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>

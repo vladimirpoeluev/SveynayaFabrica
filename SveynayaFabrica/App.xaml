@@ -90,5 +90,13 @@
                 </Setter.Value>
             </Setter>
         </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Background" Value="#E0A9AF"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="ItemsControl.Background" Value="#E0A9AF"/>
+            
+        </Style>
     </Application.Resources>
 </Application>

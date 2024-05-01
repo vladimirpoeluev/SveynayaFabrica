@@ -39,6 +39,7 @@ namespace SveynayaFabrica
                     Password = tboxPasswordRepeat.Password,
                     IdRole = 2
                 });
+                data.SaveChanges();
                 NavigationFrame.NavigateTo(new EntrancePage());
             }
         }

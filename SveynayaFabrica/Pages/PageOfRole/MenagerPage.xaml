@@ -30,7 +30,8 @@
                     Click="GoToProduct"/>
             <Button Content="Заказы" 
                     Click="GoToOrder"/>
-
+            <Button Content="Добавить заказ"
+                    Click="AddOrder"/>
         </StackPanel>
     </Grid>
 </Page>

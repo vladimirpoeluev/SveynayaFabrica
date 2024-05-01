@@ -23,5 +23,10 @@ namespace SveynayaFabrica
         {
             menegerFrame.Navigate(new OrderPage());
         }
+
+        private void AddOrder(object sender, RoutedEventArgs e)
+        {
+            menegerFrame.Navigate(new AddOrderPage());
+        }
     }
 }

@@ -9,12 +9,11 @@
       Title="RegistationPage">
 
     <Grid>
-        <Border BorderBrush="#D1EEFC"
-        HorizontalAlignment="Center"
-        VerticalAlignment="Center"
-        Width="350"
-        Padding="20"
-        Style="{StaticResource border-form}">
+        <Border HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="350"
+                Padding="20"
+                Style="{StaticResource border-form}">
 
 
             <StackPanel>
@@ -28,8 +27,6 @@
                 <Button Content="Регистрация"
                         Click="Button_Click" />
                 <Button Content="Назад"/>
-
-
             </StackPanel>
         </Border>
 
