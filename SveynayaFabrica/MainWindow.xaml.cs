@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
 using SveynayaFabrica.data.migrations;
 
 namespace SveynayaFabrica
@@ -22,6 +23,10 @@ namespace SveynayaFabrica
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+            if (mainFrame.CanGoBack)
+                mainFrame.GoBack();
+            if(!mainFrame.CanGoBack)
+                ((Button) sender).Visibility = Visibility.Hidden;
         }
 
         private void MainFrame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)

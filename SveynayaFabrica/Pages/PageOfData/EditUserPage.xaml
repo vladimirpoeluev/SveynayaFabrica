@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="EditUserPage">
 
-    <Grid>
+    <Grid Loaded="LoadedInfo">
         <Border Style="{StaticResource border-form}"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center">
@@ -16,6 +16,21 @@
                 <Label Content="Изменение пользователя"
                        FontSize="16"/>
                 <Label Content="Логин"/>
+                <TextBox x:Name="tbLogin"/>
+                <Label Content="Пароль"/>
+                <PasswordBox x:Name="pbPassword"/>
+
+                <Label Content="Роль"/>
+                <ComboBox x:Name="cbRole">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+
+                <Button Content="Сохранить изменения"
+                        Click="EditInfo"/>
             </StackPanel>
             
             

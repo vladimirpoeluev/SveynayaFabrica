@@ -17,16 +17,9 @@ namespace SveynayaFabrica.Pages.PageOfData
 
         private void DataLoaded(Object sender, EventArgs e)
         {
-            DatabaseTestsEntities data = new DatabaseTestsEntities();
-            dgOrder.ItemsSource = data.Order
-                                        .Where(or => or.IdUser == Model.Records.User.UserActual.Id).ToArray();
-            return;
-
-            foreach (Order order in data.Order
-                                        .Where(or => or.IdUser == Model.Records.User.UserActual.Id))
-            {
-                
-            }
+            DatabaseTestsEntities data  = new DatabaseTestsEntities();
+            dgOrder.ItemsSource         = data.Order
+                                            .Where(or => or.IdUser == Model.Records.User.UserActual.Id).ToArray();
         }
     }
 }

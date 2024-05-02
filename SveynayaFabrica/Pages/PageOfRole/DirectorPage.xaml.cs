@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Linq;
+using SveynayaFabrica.Pages.PageOfData;
 
 namespace SveynayaFabrica
 {
@@ -23,7 +24,7 @@ namespace SveynayaFabrica
 
         private void SelectedUsers_Click(object sender, SelectedCellsChangedEventArgs e)
         {
-            MessageBox.Show(((DataGrid)sender).SelectedIndex.ToString());
+            NavigationFrame.NavigateTo(new EditUserPage(((DataGrid)sender).SelectedValue as User));
         }
     }
 }
