@@ -23,15 +23,15 @@ namespace SveynayaFabrica.Pages.PageOfData
                 DatabaseTestsEntities data = new DatabaseTestsEntities();
                 Order addOrder = data.Order.Add(new Order()
                 {
-                    Id = 1,
+                    Id = 10000,
                     IdUser = ((User)cbUsers.SelectedItem).Id,
+                    User = ((User)cbUsers.SelectedItem),
                     Date = DateTime.Now,
                     IdState = 1,
                     IdManager = Model.Records.User.UserActual.Id,
                     Price = double.Parse(tbOrderProce.Text)
-
                 });
-                data.SaveChanges();
+                data.SaveChangesAsync();
             }
             catch (Exception)
             {

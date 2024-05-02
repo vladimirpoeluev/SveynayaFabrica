@@ -1,0 +1,6 @@
+@WebAPISveynayaFabrica_HostAddress = http://localhost:5090
+
+GET {{WebAPISveynayaFabrica_HostAddress}}/SveynayaFabrica/
+Accept: application/json
+
+###

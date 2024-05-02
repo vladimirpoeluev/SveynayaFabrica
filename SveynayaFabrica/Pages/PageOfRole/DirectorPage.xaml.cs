@@ -1,7 +1,7 @@
 ﻿using SveynayaFabrica.data.migrations;
 using System.Windows;
 using System.Windows.Controls;
-
+using System.Linq;
 
 namespace SveynayaFabrica
 {
@@ -18,11 +18,12 @@ namespace SveynayaFabrica
         private void DataLoaded(object sender, RoutedEventArgs e)
         {
             DatabaseTestsEntities data = new DatabaseTestsEntities();
+            dgUsers.ItemsSource = data.User.ToArray();
+        }
 
-            foreach(User user in data.User)
-            {
-                dgUsers.Items.Add(user);
-            }
+        private void SelectedUsers_Click(object sender, SelectedCellsChangedEventArgs e)
+        {
+            MessageBox.Show(((DataGrid)sender).SelectedIndex.ToString());
         }
     }
 }
