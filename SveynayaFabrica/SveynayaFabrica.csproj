@@ -169,6 +169,9 @@
     <Compile Include="Pages\PageOfRole\StockmanPage.xaml.cs">
       <DependentUpon>StockmanPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\ReaderReportWindow.xaml.cs">
+      <DependentUpon>ReaderReportWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="Pages\PageOfData\AddOrderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -225,6 +228,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\PageOfRole\StockmanPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ReaderReportWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

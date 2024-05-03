@@ -25,5 +25,10 @@
                 <Button Content="Регистрация" Click="Button_Click_1"/>
             </StackPanel>
         </Border>
+
+        <Button Content="Смотреть отчет"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Click="OpenReport"/>
     </Grid>
 </Page>

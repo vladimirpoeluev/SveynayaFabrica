@@ -6,6 +6,7 @@
     using System.Threading.Tasks;
     using System.Windows;
     using System.Windows.Controls;
+    using SveynayaFabrica.Windows;
 
     /// <summary>
     /// Defines the <see cref="EntrancePage" />
@@ -80,6 +81,11 @@
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             NavigationFrame.NavigateTo(new RegistationPage());
+        }
+
+        private void OpenReport(object sender, RoutedEventArgs e)
+        {
+            new ReaderReportWindow().Show();
         }
     }
 }
